@@ -1,7 +1,8 @@
-
 import localFont from "next/font/local";
-import { Videocard } from "./components/Videocard";
+import { Appbar } from "./components/Appbar";
+
 import { useState } from "react";
+import { Videogrid } from "./components/Videogrid";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,14 +18,15 @@ const geistMono = localFont({
 export default function Home() {
   const [Title, setTitle] = useState({
     title: "Shahruk khan latest video",
-    views: "47mn",
-    Img:"/image.png",
+    views: "47mn || 5 days ago",
+    Img: "/image.png",
     name: "MRWHOSETHEBOSS",
-    
+    thumb: "/photo.jpg",
   });
   return (
     <div>
-      <Videocard Title={Title} />
+      <Appbar />
+      <Videogrid />
     </div>
   );
 }

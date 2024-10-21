@@ -1,12 +1,12 @@
 export function Videocard({Title}:any) {
   return (
-    <div>
+    <div className="p-3">
       <img className="rounded-xl" src={Title.Img} />
       <div className="grid grid-cols-12 pt-4">
         <div className="col-span-1">
           <img
-            className="h-20 w-20 rounded-full col-start-2"
-            src="/photo.jpg"
+            className="h-10 w-10 rounded-full col-start-2"
+            src={Title.thumb}
           />
         </div>
         <div className="col-span-11 pl-5">
